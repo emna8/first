@@ -53,6 +53,7 @@ namespace UnitTestProject1
             Assert.AreEqual(0, result3);
 
 
+
         }
 
         [TestMethod]
@@ -65,6 +66,20 @@ namespace UnitTestProject1
             Assert.AreEqual(1, result4);
 
            
+        }
+
+        [TestMethod]
+
+
+        public void TestMethod5()
+        {
+            var conntroller = new ValuesController();
+
+            var result5 = conntroller.CalculBMI(18, 3);
+
+            Assert.AreEqual(2, result5);
+
+
         }
     }
 }
