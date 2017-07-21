@@ -54,5 +54,17 @@ namespace UnitTestProject1
 
 
         }
+
+        [TestMethod]
+        public void  TestMethod4()
+        {
+            var conntroller = new ValuesController();
+
+            var result4 = conntroller.CalculBMI(4, 2);
+
+            Assert.AreEqual(1, result4);
+
+           
+        }
     }
 }
